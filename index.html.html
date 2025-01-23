@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+.main{
+    height: 250vh;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "hero hero hero"
+    "heading heading heading"
+    "boxcontainer boxcontainer boxcontainer"
+    "footer footer footer";
+    grid-template-rows: 50px 700px 70px 1fr 350px;
+    grid-template-columns: 1fr;
+}
+.heading{
+    background-color: white;
+    grid-area: heading;
+
+}
+.heading h1{
+    text-align: center;
+  
+}
+.nav{
+    grid-area: nav ;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    padding: 16px;
+}
+.hero{
+    grid-area: hero;
+    justify-content: center;
+    background-image: url('./Mon-Ardenio-New-Balance-1300-Salmon-Sole-sneakersaddict-56a88c943df78cf7729ebd33.jpg');
+    background-size: cover;
+    grid-template-columns: auto-fit;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+.boxcontainer{
+    grid-area: boxcontainer;
+    grid-template-columns: repeat(auto-fit,490px);
+    display: grid;
+    column-gap: 10px;
+    justify-content: center;
+    
+}
+.footer{
+    grid-area: footer;
+    background-color: gray;
+}
+.box{
+    width: 100%;
+    height: 400px;
+    border: solid #f4f4f4;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    transition-property: background-color ;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 24px;
+  
+
+}
+.box:hover{
+    background-color: greenyellow;
+}
+.hero h1{
+
+    font-size: 5rem;
+   margin-left: 300px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400px;
+    text-shadow: 10px 10px 10px blue;
+   
+}
+.hero p{
+    margin-left: 400px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+
+}
+@media (max-width:750px){
+    .hero h1, .hero p{
+        margin-left:  0px;
+    }
+
+}
+@media (max-width:750px){
+    .hero h1{
+        font-size: 3rem ;
+    }
+}
+@media (max-width:750px){
+    .header{
+        text-align: center;
+    }
+}
+.hero button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: blue;
+    color: white;
+    transition-property: background-color width ;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    font-weight: 400px;
+    
+    
+}
+.hero button:hover{
+    background-color: greenyellow;
+    width: 120px;
+}
+.nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    transition-property: background-color ;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+a:hover{
+    background-color: greenyellow;
+}
+.boxcontainer button{
+    padding: 10px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-left: 50px;
+    transition-property:  background-color  transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.boxcontainer button:hover{
+    transform: scale(1.2);
+    background-color: black;
+
+}
+
+
+.hero #title{
+    color: red;
+}
+.footer p{
+    font-size: 32px;
+    font-family: monospace;
+    color: white;
+    text-align: center;
+    
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    display: block;
+}
+.box h2{
+    color: white;
+}
+iframe{
+    height: 200px;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+<div class="nav">
+    
+
+    <a href="#">Menu</a>
+    <a href="#">contact us</a>
+    <a href="#">Promotion</a>
+    <a href="#">Orders</a>
+   
+
+</div>
+<div class="hero">
+<h1> DACAMPONG'S <br> Shopping Center</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eaque cupiditate voluptatibus nisi voluptate eum, quae id iste eos nam,
+     distinctio consequuntur animi quos accusantium vero sequi pariatur atque! Adipisci? <br>
+    <button>Shop Now</button></p>
+</div>
+<div class="heading">
+    <h1>Shoes For You!</h1>
+</div>
+<div class="boxcontainer">
+<div class="box">
+  <h2>price:299</h2>
+  <img src="./61f0ZlrbVdL-removebg-preview.png" alt=""> <br> <br>
+  <button>Order</button>  
+</div>
+
+<div class="box">
+    <h2>price: 299</h2>
+    <img src="./816psbQ1E4L._AC_UL1500_-removebg-preview.png" alt=""> <br> <br>
+    <button>Order</button>    
+  </div>
+
+  <div class="box">
+    <h2>price: 299</h2>
+    <img src="./81DJ2qjUv2S._AC_SL1500_-removebg-preview.png" alt=""> <br> <br>
+    <button>Order</button>   
+  </div>
+
+  <div class="box">
+    <h2>price: 299</h2>
+    <img src="./TopoAthletic_Magnifly3-removebg-preview.png" alt=""> <br> <br>
+    <button>Order</button>   
+  </div>
+
+  <div class="box">
+    <h2>price: 299</h2>
+    <img src="./th__3_-removebg-preview.png" alt=""> <br> <br>
+    <button>Order</button>   
+  </div>
+
+  <div class="box">
+    <h2>price: 299</h2>
+    <img src="./th__2_-removebg-preview.png" alt=""> <br> <br>
+    <button>Order</button>   
+  </div>
+
+</div>
+
+<div class="footer">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.194773175552!2d124.30210230000003!3d7.286564899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32563d1bbddf8b5f%3A0x854e3c71cb0d9dda!2sIbn%20Taimiyah%20Foundation%20Academy!5e0!3m2!1sen!2sph!4v1737246323270!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<p>
+Your trusted shopping center world wide <br>
+@ Alrights Reserve 2025 </p>
+</div>
+
+
+
+
+
+
+
+
+        
+    </div>
+</body>
+</html>
